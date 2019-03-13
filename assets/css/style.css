@@ -103,6 +103,11 @@ p.lead {
 
 .project-button:hover {
   color: #fff;
+  background-color: #2d416f;
+}
+
+.project-button:focus {
+  box-shadow: none;
 }
 
 #sideNav {
@@ -185,6 +190,12 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 
+@media (max-width: 767px) {
+  #experience .resume-date {
+    margin-top: 10px;
+  }
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -200,14 +211,4 @@ section.resume-section .resume-item .resume-date {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
-}
-
-a {
-  color: #007bff;
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: #105aa9;
 }
