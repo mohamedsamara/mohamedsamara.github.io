@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link href="assets/fonts/css/all.css" rel="stylesheet" />
+    <link href="assets/vendor/devicon/devicon.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" type="image/png" href="assets/images/profile.jpg" />
   </head>
   <body>
     <!-- navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      id="sideNav"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Mohamed Samara</span>
         <span class="d-none d-lg-block">
@@ -47,6 +45,16 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education"
+              >Education</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests"
@@ -101,32 +109,61 @@
           <h2 class="mb-5">Skills</h2>
 
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        
           <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <i class="fab fa-react"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-js"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-css3-alt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-gulp"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-npm"></i>
-            </li>
-          </ul>
+              <li class="list-inline-item">
+                <i class="devicon-react-original-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-babel-plain colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-jquery-plain-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-javascript-plain colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-bootstrap-plain-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-css3-plain-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-sass-original colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-less-plain-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-webpack-plain-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-gulp-plain colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-npm"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-git-plain-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-github-plain-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-bitbucket-plain-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-gitlab-plain-wordmark colored"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-ubuntu-plain-wordmark colored"></i>
+              </li>
+            </ul>
+
         </div>
       </section>
 
@@ -143,20 +180,145 @@
       <hr class="m-0" />
 
       <section
+        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
+        id="experience"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Experience</h2>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">React JS Frontend Developer</h3>
+              <div class="subheading mb-3">Olahub</div>
+              <p>
+                Developed three frontend webistes for an ecommerce business, an
+                admin portal for the executive management to manage products,
+                categories, shipping, and payment methods, and a merchant portal
+                where the merchants can manage their products, categories,
+                merchant data, and a user portal for the users in which they
+                either buy a product or celebrate and share an online event with
+                some other participants. The project increased online customers
+                presence and merchants partnership by 35%.
+              </p>
+
+              <div class="subheading mb-3">Technologies</div>
+
+              <ul class="fa-ul mb-0">
+                <li>
+                  <i class="fa-li fa fa-check"></i>React JS, Redux, Redux-Thunk
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>React Router V4 and Redux
+                  Router
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>Reducers using Immutable.js |
+                  Immutability helpers
+                </li>
+                <li><i class="fa-li fa fa-check"></i>Jest and Enzyme</li>
+                <li><i class="fa-li fa fa-check"></i>HTML5, CSS3, Sass</li>
+                <li>
+                  <i class="fa-li fa fa-check"></i>Webpack, CLI generators
+                </li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">
+                February 2018 - September 2018
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Magento Frontend Developer</h3>
+              <div class="subheading mb-3">Oasis500</div>
+              <p>
+                Developed ecommerce themes for businesses who want to start an
+                online store, built six Magento themes and customized existing
+                websites for more than three hundred customers. Helped
+                increasing sales for multiple store owners by customizing their
+                websites based on provided designs, ensured the website is
+                visually appealing and focused on usability and shopping user
+                experience.
+              </p>
+
+              <div class="subheading mb-3">Technologies</div>
+
+              <ul class="fa-ul mb-0">
+                <li><i class="fa-li fa fa-check"></i>HTML5, CSS3</li>
+                <li><i class="fa-li fa fa-check"></i>JQuery, Bootstrap, PHP</li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">
+                November 2016 - January 2018
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="education"
+      >
+        <div class="w-100">
+          <h2 class="mb-5">Education</h2>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">University of California, Riverside</h3>
+              <div class="subheading mb-3">
+                Coding Boot Camp – Web Development Program
+              </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2019 - Present</span>
+            </div>
+          </div>
+
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">University of Jordan - School of Business</h3>
+              <div class="subheading mb-3">
+                Bachelor’s degree in Management Information System (MIS)
+              </div>
+              <p>GPA: 3.8</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary"> September 2013 – August 2016</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0" />
+
+      <section
         class="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="interests"
       >
         <div class="w-100">
           <h2 class="mb-5">Interests</h2>
           <p>
-            Apart from being a frontend developer, I enjoy most of my time being
-            outdoor. I enjoy going to the gym, playing soccer, riding my bike,
-            and camping.
+            Apart from being a frontend developer, I enjoy going to the gym,
+            playing soccer, riding my bike, and camping.
           </p>
           <p class="mb-0">
             When I am indoor, I spend a large amount of time learning new
-            technologies and tools. I also enjoy reading articles about
-            technology and business.
+            technologies and tools. I also enjoy reading articles about new
+            technologies.
           </p>
         </div>
       </section>
