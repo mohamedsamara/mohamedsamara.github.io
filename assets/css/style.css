@@ -88,6 +88,23 @@ p.lead {
   color: #cc3534;
 }
 
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.project-button {
+  background-color: #384d80;
+  color: #fff;
+}
+
+.project-button:hover {
+  color: #fff;
+}
+
 #sideNav {
   background-color: #384d80;
 }
