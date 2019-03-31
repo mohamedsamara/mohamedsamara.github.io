@@ -1,8 +1,4 @@
-/*!
- * Start Bootstrap - Resume v5.0.4 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
- */
+/* css styles */
 
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -102,6 +98,10 @@ p.lead {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+}
+
+#projects .card-img-top {
+  height: 150px;
 }
 
 .project-button {
