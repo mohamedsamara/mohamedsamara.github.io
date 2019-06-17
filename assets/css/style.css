@@ -307,6 +307,10 @@ nav > div a.nav-item.nav-link:hover .tech-badge .badge {
   align-items: center;
 }
 
+.row.display-flex {
+  margin: 0;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
@@ -387,7 +391,18 @@ nav > div a.nav-item.nav-link:hover .tech-badge .badge {
     margin-top: 10px;
   }
 
-  .tech-badge {
+  .tech-mobile {
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(39, 62, 84, 0.82);
+  }
+
+  .tech-mobile .badge {
+    margin: 5px;
+    background-color: #e74c3c;
+  }
+
+  nav .tech-badge {
     display: none;
     flex-direction: column;
   }
