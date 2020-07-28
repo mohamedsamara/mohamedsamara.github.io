@@ -13,36 +13,26 @@
   </head>
   <body id="page-top">
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
-      <div class="header-cover">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top px-0" id="nav">
+      <div class="header-cover container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <span class="d-block d-lg-none">Mohamed Samara</span>
-          <span class="d-none d-lg-block">
-            <img
-              class="img-fluid img-profile rounded-circle mx-auto mb-2"
-              src="assets/images/profile.jpg"
-              alt="Mohamed Samara"
-            />
-          </span>
-        </a>     
+          <span>Mohamed Samara</span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-target="#navbarToggle"
+          aria-controls="navbarToggle"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects"
@@ -50,82 +40,91 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#experience"
-                >Experience</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#education"
-                >Education</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#interests"
-                >Interests</a
-              >
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
             </li>
           </ul>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/mohamed-samara/" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/mohamedsamara" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
         </div>
       </div>
     </nav>
-
     <!-- main content -->
-    <div class="container-fluid p-0">
+    <main class="main container">
       <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        class="py-4 py-lg-5 d-flex align-items-center main-section"
         id="about"
       >
         <div class="w-100">
-          <h4 class="mb-0">
-            Mohamed
-            <span class="text-primary">Samara</span>
+          <h3 class="mb-5">About me</h3>
+          <h4 class="text-capitalize mb-3">
+            Hey! I’m <span class="text-primary">Mohamed</span>.
           </h4>
-          <div class="subheading mb-5">
-            <div class="location">
-              <i class="fa fa-map-marker-alt"></i>
-              Riverside, California
-            </div>
-            <div class="email">
-              <i class="fa fa-envelope"></i>
-              <a href="mailto:mohamedysamara@email.com"
-                >mohamedysamara@gmail.com</a
-              >
-            </div>
-          </div>
-          <p class="lead mb-5">
-            I’m frontend developer with deep knowledge and proficiency in developing end to end JavaScript web applications as well as strong ability to communicate and work in a team effectively. I actively seek out new technologies and stay up to date on industry trends and advancements
-          </p>   
-          <p class="lead mb-5">
-            My previous career as a React developer brought me to my true
-            passion: building end to end frontend web applications. Starting 
-            with building a foundation boilerplate for development and production
-            with all the modules and libraries needed, and then translating wireframes and
-            mockups into a clean and neat HTML, CSS code considering web SEO standards,
-            cross browser compatibility and responsiveness. Managing application states and
-            populating application's components with data received from APIs as well as testing
-            components and handling errors
+          <p class="lead mb-3">
+            I’m a JavaScript Engineer, currently working as a full time Lead
+            Frontend Developer, and I also build open source projects for fun. I
+            love learning new things and sharing my discoveries with others
+            through experiments and projects on Github. I'm currently exploring
+            React and Node.
           </p>
+
+          <p class="lead mb-5">
+            All of my open source projects can be found on
+            <a
+              href="https://github.com/mohamedsamara"
+              target="_blank"
+              title="github"
+            >
+              Github</a
+            >. A few I’m proud of are listed
+            <a class="js-scroll-trigger" href="#projects" title="projects"
+              >Here</a
+            >
+          </p>
+
+          <ul class="social-icons">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/mohamed-samara/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/mohamedsamara" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <hr class="m-0" />
+      <hr />
 
       <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        class="py-4 py-lg-5 d-flex align-items-center main-section"
+        id="projects"
+      >
+        <div class="w-100">
+          <h3 class="mb-5">Projects</h3>
+          <div class="row" id="repos">
+            <div class="col-12 text-center" id="loader">
+              <i
+                class="fas fa-circle-notch fa-spin fa-2x text-primary"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section
+        class="py-4 py-lg-5 d-flex align-items-center main-section"
         id="skills"
       >
         <div class="w-100">
           <h3 class="mb-5">Skills</h3>
-
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-
           <ul class="list-inline dev-icons">
             <li class="list-inline-item">
               <i class="devicon-react-original-wordmark colored"></i>
@@ -152,7 +151,7 @@
               <i class="devicon-mysql-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
-             <i class="devicon-sequelize-plain-wordmark colored"></i>
+              <i class="devicon-sequelize-plain-wordmark colored"></i>
             </li>
             <li class="list-inline-item">
               <i class="devicon-bootstrap-plain-wordmark colored"></i>
@@ -200,691 +199,17 @@
         </div>
       </section>
 
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="projects"
-      >
-        <div class="w-100">
-          <h3 class="mb-5">Projects</h3>
-              <nav>
-                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-react-tab" data-toggle="tab" href="#nav-react" role="tab" aria-controls="nav-react" aria-selected="true">
-                    React
-                   <div class="tech-badge">
-                      <span class="badge badge-secondary">TypeScript</span>
-                      <span class="badge badge-secondary">Redux</span>
-                      <span class="badge badge-secondary">Webpack</span>
-                      <span class="badge badge-secondary">Gulp</span>
-                   </div>
-                   <div class="tech-badge">
-                      <span class="badge badge-secondary">Saga</span>
-                      <span class="badge badge-secondary">Thunk</span>
-                      <span class="badge badge-secondary">Sass</span>
-                   </div>
-                  </a>
-                  <a class="nav-item nav-link" id="nav-node-tab" data-toggle="tab" href="#nav-node" role="tab" aria-controls="nav-node" aria-selected="false">
-                    Node
-                    <div class="tech-badge">
-                      <span class="badge badge-secondary">Express</span>
-                      <span class="badge badge-secondary">MySQL</span>
-                      <span class="badge badge-secondary">Mongoose</span>
-                    </div>
-                    <div class="tech-badge">
-                        <span class="badge badge-secondary">Websocket</span>
-                        <span class="badge badge-secondary">Sequelize</span>
-                    </div>
-                  </a>
-                  <a class="nav-item nav-link" id="nav-jquery-tab" data-toggle="tab" href="#nav-jquery" role="tab" aria-controls="nav-jquery" aria-selected="false">
-                    Jquery
-                    <div class="tech-badge">
-                      <span class="badge badge-secondary">Firebase</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="row tech-mobile d-block d-md-none">
-                    <span class="badge badge-secondary">TypeScript</span>
-                    <span class="badge badge-secondary">Redux</span>
-                    <span class="badge badge-secondary">Webpack</span>
-                    <span class="badge badge-secondary">Gulp</span>
-                    <span class="badge badge-secondary">Saga</span>
-                    <span class="badge badge-secondary">Thunk</span>
-                    <span class="badge badge-secondary">Sass</span>
-                    <span class="badge badge-secondary">Express</span>
-                    <span class="badge badge-secondary">MySQL</span>
-                    <span class="badge badge-secondary">Mongoose</span>
-                    <span class="badge badge-secondary">Websocket</span>
-                    <span class="badge badge-secondary">Sequelize</span>
-                    <span class="badge badge-secondary">Firebase</span>
-                 </div>
-              </nav>
-              <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                <div class="tab-pane fade show active row display-flex" id="nav-react" role="tabpanel" aria-labelledby="nav-react-tab">
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                    <div class="card">
-                      <img
-                        class="card-img-top"
-                        src="assets/images/MERN-Starter.gif"
-                        alt="MERN Starter App"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">MERN Starter Boilerplate</h5>
-                        <p
-                          class="card-text"
-                          title="Fullstack MERN Application with TypeScript, simple, easy to use, and scalable
-                          boilerplate"
-                        >
-                         Fullstack MERN Application with TypeScript, simple, easy to use, and scalable
-                         boilerplate
-                        </p>
-                        <div class="project-box">
-                          <div class="github-source">
-                            <i class="fab fa-github fa-2x"></i>
-                            <a
-                              target="_blank"
-                              href="https://github.com/mohamedsamara/MERN-Starter"
-                            >
-                            Code</a
-                            >
-                            <span class="space">| |</span>
-                            <a
-                            target="_blank"
-                            href="https://calm-waters-13690.herokuapp.com/"
-                            >
-                            Demo</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="assets/images/React-Starter-App.gif"
-                          alt="React Starter App"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">React Webpack Boilerplate</h5>
-                          <p
-                            class="card-text"
-                            title="React Starter Application, simple, easy to use, and scalable boilerplate"
-                          >
-                            React Starter Application, simple, easy to use, and scalable
-                            boilerplate
-                          </p>
-                          <div class="project-box">
-                            <div class="github-source">
-                              <i class="fab fa-github fa-2x"></i>
-                              <a
-                                target="_blank"
-                                href="https://github.com/mohamedsamara/React-Starter-App"
-                              >
-                                View Code</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="assets/images/Redux-Saga-App.png"
-                          alt="Redux Saga App"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Redux Saga Boilerplate</h5>
-                          <p
-                            class="card-text"
-                            title="Redux Saga Application, easy to use boilerplate using react & redux-saga"
-                          >
-                            Redux Saga Application, easy to use boilerplate using react
-                            & redux-saga
-                          </p>
-                          <div class="project-box">
-                            <div class="github-source">
-                              <i class="fab fa-github fa-2x"></i>
-                              <a
-                                target="_blank"
-                                href="https://github.com/mohamedsamara/Redux-Saga-App"
-                              >
-                                View Code</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="assets/images/React-Firebase.gif"
-                          alt="React Firebase App"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">React Firebase Boilerplate</h5>
-                          <p
-                            class="card-text"
-                            title="React Firebase Application, easy to use boilerplate using
-                            react & firebase"
-                          >
-                            React Firebase Application, easy to use boilerplate using
-                            react & firebase
-                          </p>
-                          <div class="project-box">
-                            <div class="github-source">
-                              <i class="fab fa-github fa-2x"></i>
-                              <a
-                                target="_blank"
-                                href="https://github.com/mohamedsamara/React-Firebase-App"
-                              >
-                                View Code</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="assets/images/Gulp-Starter-App.png"
-                          alt="Gulp Starter App"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">React Gulp Boilerplate</h5>
-                          <p
-                            class="card-text"
-                            title="Gulp Starter Application, simple, easy to use, and scalable boilerplate"
-                          >
-                            Gulp Starter Application, simple, easy to use, and scalable
-                            boilerplate
-                          </p>
-                          <div class="project-box">
-                            <div class="github-source">
-                              <i class="fab fa-github fa-2x"></i>
-                              <a
-                                target="_blank"
-                                href="https://github.com/mohamedsamara/Gulp-Starter-App"
-                              >
-                                View Code</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="assets/images/Clicky-Game.gif"
-                          alt="Clicky Game"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Clicky Game</h5>
-                          <p
-                            class="card-text"
-                            title="Clicky Game with create-react-app"
-                          >
-                          Clicky Game with create-react-app, reusable components using ES6 and JSX
-                          </p>
-                          <div class="project-box">
-                            <div class="github-source">
-                              <i class="fab fa-github fa-2x"></i>
-                              <a
-                                target="_blank"
-                                href="https://github.com/mohamedsamara/Clicky-Game"
-                              >
-                              Code</a
-                              >
-                              <span class="space">| |</span>
-                              <a
-                              target="_blank"
-                              href="https://mysterious-crag-94480.herokuapp.com/"
-                              >
-                              Demo</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-node" role="tabpanel" aria-labelledby="nav-node-tab">
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                        <div class="card">
-                          <img
-                            class="card-img-top"
-                            src="assets/images/Node-Websocket-App.gif"
-                            alt="Node Websocket App"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title">Node Websocket Application</h5>
-                            <p
-                              class="card-text"
-                              title="A Real Time Chat Application with Node, Express and MongoDB"
-                            >
-                            A Real Time Chat Application with Node, Express and MongoDB
-                            </p>
-                            <div class="project-box">
-                              <div class="github-source">
-                                <i class="fab fa-github fa-2x"></i>
-                                <a
-                                  target="_blank"
-                                  href="https://github.com/mohamedsamara/Node-Websocket-App"
-                                >
-                                  View Code</a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                          <div class="card">
-                            <img
-                              class="card-img-top"
-                              src="assets/images/Node-MySQL-Todo-App.gif"
-                              alt="Node MySQL Todo App"
-                            />
-                            <div class="card-body">
-                              <h5 class="card-title">Node.js, Express & MySQL Application</h5>
-                              <p
-                                class="card-text"
-                                title="Simple Todo Application with Node.js, Express & MySQL"
-                              >
-                              Simple Todo Application with Node.js, Express & MySQL
-                              </p>
-                              <div class="project-box">
-                                <div class="github-source">
-                                  <i class="fab fa-github fa-2x"></i>
-                                  <a
-                                    target="_blank"
-                                    href="https://github.com/mohamedsamara/Node-MySQL-Todo-App"
-                                  >
-                                    View Code</a
-                                  >
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                        <div class="card">
-                          <img
-                            class="card-img-top"
-                            src="assets/images/Eat-Da-Burger.gif"
-                            alt="Eat Da Burger"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title">Eat Da Burger</h5>
-                            <p
-                              class="card-text"
-                              title="Eat Da Burger Application, add your favorite burger and devour it !"
-                            >
-                            Eat Da Burger Application, add your favorite burger and devour it !
-                            </p>
-                            <div class="project-box">
-                              <div class="github-source">
-                                <i class="fab fa-github fa-2x"></i>
-                                <a
-                                  target="_blank"
-                                  href="https://github.com/mohamedsamara/Eat-Da-Burger"
-                                >
-                                 View Code</a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                     </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                        <div class="card">
-                          <img
-                            class="card-img-top"
-                            src="assets/images/News-Scraper.jpg"
-                            alt="News Scraper"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title">Node.js, Express & Mongoose Application</h5>
-                            <p
-                              class="card-text"
-                              title="Simple News Scraper Application with Node.js, Express & Mongoose"
-                            >
-                            Simple News Scraper Application with Node.js, Express & Mongoose
-                            </p>
-                            <div class="project-box">
-                              <div class="github-source">
-                                <i class="fab fa-github fa-2x"></i>
-                                <a
-                                  target="_blank"
-                                  href="https://github.com/mohamedsamara/News-Scraper"
-                                >Code</a>
-                                <span class="space">| |</span>
-                                <a
-                                target="_blank"
-                                href="https://afternoon-atoll-26035.herokuapp.com/"
-                              >
-                                Demo</a
-                              >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                        <div class="card">
-                          <img
-                            class="card-img-top"
-                            src="assets/images/Friend-Finder-App.jpg"
-                            alt="Friend Finder App"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title">Friend Finder Application</h5>
-                            <p
-                              class="card-text"
-                              title="Friend Finder Application with Node, Express & Express Handlebars"
-                            >
-                            Friend Finder Application with Node, Express & Express Handlebars
-                            </p>
-                            <div class="project-box">
-                              <div class="github-source">
-                                <i class="fab fa-github fa-2x"></i>
-                                <a
-                                  target="_blank"
-                                  href="https://github.com/mohamedsamara/Friend-Finder-App"
-                                >Code</a>
-                                <span class="space">| |</span>
-                                <a
-                                target="_blank"
-                                href="https://obscure-headland-76213.herokuapp.com/"
-                              >
-                                Demo</a
-                              >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-jquery" role="tabpanel" aria-labelledby="nav-jquery-tab">
-                  <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                    <div class="card">
-                      <img
-                        class="card-img-top"
-                        src="assets/images/Employee-Management.png"
-                        alt="Employee Management"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">Employee Data Management</h5>
-                        <p
-                          class="card-text"
-                          title="Employee data management application, fetch and send employee data from and to firebase database"
-                        >
-                          Employee data management application, fetch and send
-                          employee data from and to firebase database
-                        </p>
-                        <div class="project-box">
-                          <div class="github-source">
-                            <i class="fab fa-github fa-2x"></i>
-                            <a
-                              target="_blank"
-                              href="https://github.com/mohamedsamara/Employee-Management"
-                            >
-                            Code</a
-                            >
-                            <span class="space">| |</span>
-                            <a
-                            target="_blank"
-                            href="https://mohamedsamara.github.io/Employee-Management/"
-                            >
-                            Demo</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="assets/images/Train-Scheduler.jpg"
-                          alt="Train Scheduler"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Train Scheduler</h5>
-                          <p
-                            class="card-text"
-                            title="Train schedule application provide information about trains, arrival time, time remaining until they arrive at their station"
-                          >
-                          Train schedule application provide information about trains, arrival time, time remaining until they arrive at their station
-                          </p>
-                          <div class="project-box">
-                            <div class="github-source">
-                              <i class="fab fa-github fa-2x"></i>
-                              <a
-                                target="_blank"
-                                href="https://github.com/mohamedsamara/Train-Scheduler"
-                              >
-                              Code</a
-                              >
-                              <span class="space">| |</span>
-                              <a
-                              target="_blank"
-                              href="https://mohamedsamara.github.io/Train-Scheduler/"
-                              >
-                              Demo</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="mt-4 col-12 col-sm-6 col-md-6 col-xl-4">
-                      <div class="card">
-                        <img
-                          class="card-img-top"
-                          src="assets/images/Rock-Paper-Scissors.jpg"
-                          alt="Rock Paper Scissors"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Rock Paper Scissors</h5>
-                          <p
-                            class="card-text"
-                            title="Rock Paper Scissors game, an online multiplayer game"
-                          >
-                          Rock Paper Scissors game, an online multiplayer game
-                          </p>
-                          <div class="project-box">
-                            <div class="github-source">
-                              <i class="fab fa-github fa-2x"></i>
-                              <a
-                                target="_blank"
-                                href="https://github.com/mohamedsamara/Rock-Paper-Scissors"
-                              >
-                              Code</a
-                              >
-                              <span class="space">| |</span>
-                              <a
-                              target="_blank"
-                              href="https://mohamedsamara.github.io/Rock-Paper-Scissors/"
-                              >
-                              Demo</a
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-        </div>
-      </div>
-      </section>
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="experience"
-      >
-        <div class="w-100">
-          <h3 class="mb-5">Experience</h3>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h4 class="mb-0">React JS Frontend Developer</h4>
-              <div class="subheading mb-3">Olahub</div>
-              <p>
-                Developed three frontend webistes for an ecommerce business, an
-                admin portal for the executive management to manage products,
-                categories, shipping, and payment methods, and a merchant portal
-                where the merchants can manage their products, categories,
-                merchant data, and a user portal for the users in which they
-                either buy a product or celebrate and share an online event with
-                some other participants. The project increased online customers
-                presence by 30% and merchants partnership by 45%
-              </p>
-
-              <div class="subheading mb-3">Technologies</div>
-
-              <ul class="fa-ul mb-0">
-                <li>
-                  <i class="fa-li fa fa-check"></i>React JS, Redux, Redux-Thunk
-                </li>
-                <li>
-                  <i class="fa-li fa fa-check"></i>React Router V4 and Redux
-                  Router
-                </li>
-                <li>
-                  <i class="fa-li fa fa-check"></i>Reducers using Immutable.js |
-                  Immutability helpers
-                </li>
-                <li><i class="fa-li fa fa-check"></i>Jest and Enzyme</li>
-                <li><i class="fa-li fa fa-check"></i>HTML5, CSS3, Sass</li>
-                <li><i class="fa-li fa fa-check"></i>Flow types</li>
-                <li>
-                  <i class="fa-li fa fa-check"></i>Webpack, CLI generators
-                </li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">
-                February 2018 - September 2018
-              </span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h4 class="mb-0">Magento Frontend Developer</h4>
-              <div class="subheading mb-3">Oasis500</div>
-              <p>
-                Developed ecommerce themes for businesses who want to start an
-                online store, built six Magento themes and customized existing
-                websites for more than three hundred customers. Helped
-                increasing sales for multiple store owners by customizing their
-                websites based on provided designs, ensured the website is
-                visually appealing and focused on usability and shopping user
-                experience
-              </p>
-
-              <div class="subheading mb-3">Technologies</div>
-
-              <ul class="fa-ul mb-0">
-                <li><i class="fa-li fa fa-check"></i>HTML5, CSS3</li>
-                <li><i class="fa-li fa fa-check"></i>JQuery, Bootstrap, PHP</li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">
-                November 2016 - January 2018
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="education"
-      >
-        <div class="w-100">
-          <h3 class="mb-5">Education</h3>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h4 class="mb-0">University of California, Riverside</h4>
-              <div class="subheading mb-3">
-                Coding Boot Camp – Web Development Program
-              </div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2019 - Present</span>
-            </div>
-          </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between"
-          >
-            <div class="resume-content">
-              <h4 class="mb-0">University of Jordan - School of Business</h4>
-              <div class="subheading mb-3">
-                Bachelor’s degree in Management Information System (MIS)
-              </div>
-              <p>GPA: 3.8</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary"> September 2013 – August 2016</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="interests"
-      >
-        <div class="w-100">
-          <h3 class="mb-5">Interests</h3>
-          <p>
-            Apart from being a frontend developer, I enjoy going to the gym and staying healthy,
-            playing soccer. I also enjoy riding my bike, and camping
-          </p>
-          <p class="mb-0">
-            When I am indoor, I spend a large amount of time learning new
-            technologies and staying up to date with what's new in the market.
-            Beside that I could be spending the time with family and friends,
-            playing board games, trying out new restaurants, visiting new places  
-          </p>
-        </div>
-      </section>
-
-      <hr class="m-0" />
-    </div>
+      <hr />
+    </main>
 
     <!-- js scripts -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/jquery.easing.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Custom scripts for this template -->
+
+    <!-- custom scripts for this template -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/api.js"></script>
     <!-- js scripts  -->
   </body>
 </html>
