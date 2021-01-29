@@ -14,11 +14,13 @@ $(document).ready(function () {
 
   function mountRepos(data) {
     var forkedRepos = data.filter(function (x) {
-      return x.stargazers_count > 0;
+      return x.stargazers_count > 0 || x.forks_count > 0;
     });
 
     $.each(forkedRepos, function (index, item) {
-      var desc = item.description.split(":")[2];
+      var desc = item.description.startsWith(":")
+        ? item.description.split(":")[2]
+        : item.description;
 
       var title =
         '<h5 class="card-title" title="' +
@@ -36,17 +38,25 @@ $(document).ready(function () {
         '">' +
         '<i class="fab fa-github" aria-hidden="true" title="github code"></i></a>';
 
+      var branch =
+        '<i class="fa fa-code-branch mr-2" aria-hidden="true" title="github stars"></i>' +
+        "<span>" +
+        item.forks_count +
+        "</span>";
+
       var stars =
         '<i class="fa fa-star mr-2" aria-hidden="true" title="github stars"></i>' +
         "<span>" +
         item.stargazers_count +
         "</span>";
 
+      var special = item.stargazers_count > 0 ? stars : branch;
+
       var actions =
         '<div class="d-flex align-items-center justify-content-between repo-action"> ' +
         github +
         '<div class="d-flex align-items-center justify-content-between">' +
-        stars +
+        special +
         "</div></div>";
 
       var content =

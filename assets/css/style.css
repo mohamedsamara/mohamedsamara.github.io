@@ -107,10 +107,6 @@ p.lead {
   font-size: 3rem;
 }
 
-.fa-npm {
-  color: #cc3534;
-}
-
 .card {
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
@@ -150,6 +146,11 @@ p.lead {
 
 .repo .repo-action .fa-star::before {
   color: #ffc107;
+}
+
+.repo .repo-action .fa-code-branch::before {
+  /* color: #e74c3c; */
+  color: black;
 }
 
 .github-source .fa-github {
