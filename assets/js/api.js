@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $.ajax({
-    url: "https://api.github.com/users/mohamedsamara/repos",
+    url: "https://api.github.com/users/mohamedsamara/repos?page=1&per_page=100",
     beforeSend: function () {
       $("#loader").show();
     },
@@ -50,7 +50,12 @@ $(document).ready(function () {
         item.stargazers_count +
         "</span>";
 
-      var special = item.stargazers_count > 0 ? stars : branch;
+      var specialStars =
+        item.stargazers_count > 0 ? "<div>" + stars + "</div>" : "";
+      var specialBranch =
+        item.forks_count > 0 ? "<div class='mr-2'>" + branch + "</div>" : "";
+
+      var special = specialBranch + specialStars;
 
       var actions =
         '<div class="d-flex align-items-center justify-content-between repo-action"> ' +
