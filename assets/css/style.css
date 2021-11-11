@@ -33,7 +33,7 @@ h3 {
 }
 
 h3 {
-  color: #e74c3c;
+  color: #2e455a;
 }
 
 h4 {
@@ -53,8 +53,8 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e74c3c;
-  border: 2px solid #e74c3c;
+  background-color: #90979f;
+  border: 2px solid #90979f;
 }
 
 ::-webkit-scrollbar-track {
@@ -74,6 +74,11 @@ p.lead {
 .subheading {
   font-weight: 500;
   font-size: 1.2rem;
+  color: #2e455a;
+}
+
+.section-title {
+  font-weight: 600;
 }
 
 .social-icons {
@@ -138,6 +143,7 @@ p.lead {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   word-break: break-all;
+  font-weight: 500;
 }
 
 .repo .repo-action .fab {
@@ -150,7 +156,6 @@ p.lead {
 }
 
 .repo .repo-action .fa-code-branch::before {
-  /* color: #e74c3c; */
   color: black;
 }
 
@@ -191,14 +196,16 @@ p.lead {
   width: 100%;
 }
 
-.navbar .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  color: #2e455a;
 }
 
-.navbar .navbar-toggler:focus {
-  outline-color: #e74c3c;
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
 }
 
 section.main-section {
