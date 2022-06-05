@@ -13,14 +13,22 @@ $(document).ready(function () {
   });
 
   function mountRepos(data) {
-    var forkedRepos = data.filter(function (x) {
-      return x.stargazers_count > 0 || x.forks_count > 0;
-    });
+    var forkedRepos = data
+      .filter(function (x) {
+        return x.stargazers_count > 0 || x.forks_count > 0;
+      })
+      .sort(
+        (a, b) =>
+          b.stargazers_count - a.stargazers_count ||
+          b.forks_count - a.forks_count
+      );
 
     $.each(forkedRepos, function (index, item) {
-      var desc = item.description.startsWith(":")
-        ? item.description.split(":")[2]
-        : item.description;
+      var desc = item.description
+        ? item.description.startsWith(":")
+          ? item.description.split(":")[2]
+          : item.description
+        : "";
 
       var title =
         '<h5 class="card-title" title="' +
