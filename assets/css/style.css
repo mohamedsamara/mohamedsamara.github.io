@@ -81,6 +81,11 @@ p.lead {
   font-weight: 600;
 }
 
+.announcement-banner {
+  height: 40px;
+  background-color: #f2f3f4;
+}
+
 .social-icons {
   width: 100%;
   list-style-type: none;
@@ -165,8 +170,9 @@ p.lead {
 }
 
 .navbar {
-  box-shadow: #00000026 0px 1px 4px 0px;
+  box-shadow: #f2f3f4 0px 1px 0px 0px;
   background-color: #fff;
+  top: 40px;
 }
 
 .navbar-light .navbar-toggler {
